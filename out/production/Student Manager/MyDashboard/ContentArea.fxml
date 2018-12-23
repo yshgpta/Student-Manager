@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyDashboard.ContentareaController">
+   <children>
+      <HBox fx:id="menubar" alignment="CENTER_LEFT" minWidth="650.0" prefHeight="80.0" prefWidth="800.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#open_sidebar" prefHeight="42.0" prefWidth="55.0" style="-fx-background-color: #fff;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fx:id="imgView" fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/hamburg.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="80.0" prefWidth="100.0" />
+            <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/search.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <JFXTextField fx:id="txtField" focusColor="#2f2f2f" labelFloat="true" prefHeight="31.0" prefWidth="580.0" promptText="Search Here....">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <Separator orientation="VERTICAL" prefHeight="80.0" prefWidth="128.0" />
+            <Button mnemonicParsing="false" onAction="#launchHome" style="-fx-background-color: #fff;">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="402.0" prefWidth="1000.0">
+         <children>
+            <VBox prefHeight="570.0" prefWidth="1000.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="1000.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="269.0" />
+                        <ImageView fitHeight="29.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/rollno.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="61.0" text="Roll No:">
+                           <font>
+                              <Font name="Roboto Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="290.0" text="LIT2017043">
+                           <font>
+                              <Font name="Roboto Regular" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="currentDate" prefHeight="21.0" prefWidth="120.0" text="CURRENT DATE:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbldate">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="1000.0">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/dob.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="50.0" text="DOB:">
+                           <font>
+                              <Font name="Roboto Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="177.0" text="25 March,1998">
+                           <font>
+                              <Font name="Roboto Regular" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="66.0" prefHeight="56.0" prefWidth="1000.0">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/homeb.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="63.0" text="Address:">
+                           <font>
+                              <Font name="Roboto Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="144.0" text="Lucknow,UP">
+                           <font>
+                              <Font name="Roboto Regular" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="122.0" prefHeight="56.0" prefWidth="1000.0">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/contact.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="60.0" text="Contact:">
+                           <font>
+                              <Font name="Roboto Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="144.0" text="+91 123456789">
+                           <font>
+                              <Font name="Roboto Regular" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="178.0" prefHeight="56.0" prefWidth="1000.0">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/email.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="50.0" text="Email:">
+                           <font>
+                              <Font name="Roboto Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="144.0" text="ysh.gpta@gmail.com">
+                           <font>
+                              <Font name="Roboto Regular" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="234.0" prefHeight="56.0" prefWidth="1000.0">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/github.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="50.0" text="Github:">
+                           <font>
+                              <Font name="Roboto Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="167.0" text="www.github.io/ysh_gpta">
+                           <font>
+                              <Font name="Roboto Regular" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="1000.0">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/linkdin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="73.0" text="Linkedin:">
+                           <font>
+                              <Font name="Roboto Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="367.0" text="https://www.linkedin.com/in/yash-gupta-7b56b6160/">
+                           <font>
+                              <Font name="Roboto Regular" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="31.0" prefWidth="1000.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="1000.0">
+               <children>
+                  <Label fx:id="messagehead" prefHeight="45.0" prefWidth="267.0" text="TODAY'S MESSAGE">
+                     <font>
+                        <Font name="Comic Sans MS" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="1000.0">
+               <children>
+                  <Label fx:id="quotelbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="1000.0" wrapText="true">
+                     <font>
+                        <Font name="Monotype Corsiva" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

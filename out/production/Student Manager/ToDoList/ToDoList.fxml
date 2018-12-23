@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ToDoList.Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #4782FF;">
+         <children>
+            <Label prefHeight="53.0" prefWidth="898.0" text="TO DO LIST" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Regular" size="36.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#launchHome" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/backw.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="1000.0">
+         <children>
+            <Button fx:id="addEvent" mnemonicParsing="false" onAction="#addEvent" prefHeight="31.0" prefWidth="115.0" text="Add Event" />
+            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="39.0" />
+            <DatePicker fx:id="datePicker" prefHeight="31.0" prefWidth="280.0" />
+            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="22.0" />
+            <JFXTextField fx:id="descriptionText" focusColor="#2e2f32" labelFloat="true" prefHeight="31.0" prefWidth="520.0" promptText="Add Description of the Event" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="10.0" prefWidth="1000.0">
+         <children>
+            <Separator prefHeight="2.0" prefWidth="1000.0" />
+         </children>
+      </HBox>
+      <ListView fx:id="eventList" prefHeight="520.0" prefWidth="1000.0" />
+   </children>
+</VBox>

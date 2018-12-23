@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainPane" alignment="TOP_CENTER" prefHeight="700.0" prefWidth="1000.0" stylesheets="css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CGPACalculator.Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #4782FF;">
+         <children>
+            <Label prefHeight="53.0" prefWidth="905.0" text="CGPA CALCULATOR" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Regular" size="36.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#launchHome" prefHeight="41.0" prefWidth="23.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/backw.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   
+       <GridPane fx:id="classesPane" alignment="CENTER">
+      <children>
+              <Label fx:id="titleHeader" text="Title (optional)" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+              <Label fx:id="gradeHeader" styleClass="gradeColumn" text="Grade" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+              <Label fx:id="creditsHeader" styleClass="creditsColumn" text="Credits" GridPane.columnIndex="2" GridPane.rowIndex="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+              <Label fx:id="qualityPointsHeader" styleClass="qualityPointsColumn" text="Quality Points" GridPane.columnIndex="3" GridPane.rowIndex="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+      </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+       </GridPane>
+   
+       <HBox fx:id="addClass" alignment="CENTER" prefHeight="60.0" prefWidth="1000.0">
+      <children>
+              <Pane fx:id="addClassButtonLeftSpacer" />
+              <VBox>
+                 <children>
+                     <Pane fx:id="addClassButtonTopSpacer" />
+                  <JFXButton fx:id="addClassButton" onAction="#handleAddClassButton" stylesheets="@css/style.css" text="Add Another Class">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                 </children>
+              </VBox>
+      </children>
+       </HBox>
+   
+       <GridPane fx:id="existingGPAContainer" alignment="CENTER">
+      <children>
+              <Label text="Include Current GPA (optional)" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="currentGPA" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+              <Label fx:id="currentGPAError" styleClass="errorLabel" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+      
+              <Label text="Current Credits (optional)" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="currentCredits" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              <Label fx:id="currentCreditsError" styleClass="errorLabel" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+       </GridPane>
+      <VBox prefHeight="120.0" prefWidth="1000.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="54.0" prefWidth="1000.0">
+               <children>
+                    <Label fx:id="gpaLabel" text="CGPA:">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                    <Label fx:id="gpaOverall" prefHeight="35.0" prefWidth="53.0" text="0.00">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="51.0" prefWidth="1000.0">
+               <children>
+                  <JFXButton fx:id="resetButton" onAction="#handleResetButton" stylesheets="@css/style.css" text="Reset">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+
+</VBox>

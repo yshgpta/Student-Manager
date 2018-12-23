@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AttendencePercentage.Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #4782FF;">
+         <children>
+            <Label prefHeight="53.0" prefWidth="897.0" text="ATTENDENCE PERCENTAGE" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Regular" size="36.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#launchHome" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/backw.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="73.0" prefWidth="1000.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="200.0" text="Subject(Optional)">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label layoutX="247.0" layoutY="16.0" prefHeight="35.0" prefWidth="150.0" text="Total Classes">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="874.0" layoutY="10.0" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label prefHeight="35.0" prefWidth="100.0" text="Absents">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="345.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            <Label prefHeight="35.0" prefWidth="150.0" text="Percentage">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="666.0" layoutY="29.0" prefHeight="35.0" prefWidth="200.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="47.0" prefWidth="1000.0">
+         <children>
+            <TextField prefHeight="31.0" prefWidth="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="tc1" prefHeight="31.0" prefWidth="150.0" />
+            <Separator layoutX="874.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="a1" prefHeight="31.0" prefWidth="100.0" />
+            <Separator layoutX="345.0" layoutY="10.0" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label fx:id="p1" prefWidth="150.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="r1" prefWidth="200.0" textFill="#f20b0b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="183.0" prefHeight="47.0" prefWidth="1000.0">
+         <children>
+            <TextField prefHeight="31.0" prefWidth="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="tc2" prefHeight="31.0" prefWidth="150.0" />
+            <Separator layoutX="874.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="a2" prefHeight="31.0" prefWidth="100.0" />
+            <Separator layoutX="345.0" layoutY="10.0" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label fx:id="p2" prefWidth="150.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="r2" prefWidth="200.0" textFill="#f20b0b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="330.0" prefHeight="47.0" prefWidth="1000.0">
+         <children>
+            <TextField prefHeight="31.0" prefWidth="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="tc3" prefHeight="31.0" prefWidth="150.0" />
+            <Separator layoutX="874.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="a3" prefHeight="31.0" prefWidth="100.0" />
+            <Separator layoutX="345.0" layoutY="10.0" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label fx:id="p3" prefWidth="150.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="r3" prefWidth="200.0" textFill="#f20b0b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="377.0" prefHeight="47.0" prefWidth="1000.0">
+         <children>
+            <TextField prefHeight="31.0" prefWidth="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="tc4" prefHeight="31.0" prefWidth="150.0" />
+            <Separator layoutX="874.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="a4" prefHeight="31.0" prefWidth="100.0" />
+            <Separator layoutX="345.0" layoutY="10.0" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label fx:id="p4" prefWidth="150.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="r4" prefWidth="200.0" textFill="#f20b0b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="424.0" prefHeight="47.0" prefWidth="1000.0">
+         <children>
+            <TextField prefHeight="31.0" prefWidth="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="tc5" prefHeight="31.0" prefWidth="150.0" />
+            <Separator layoutX="874.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="a5" prefHeight="31.0" prefWidth="100.0" />
+            <Separator layoutX="345.0" layoutY="10.0" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label fx:id="p5" prefWidth="150.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="r5" prefWidth="200.0" textFill="#f20b0b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="471.0" prefHeight="47.0" prefWidth="1000.0">
+         <children>
+            <TextField prefHeight="31.0" prefWidth="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="tc6" prefHeight="31.0" prefWidth="150.0" />
+            <Separator layoutX="874.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="a6" prefHeight="31.0" prefWidth="100.0" />
+            <Separator layoutX="345.0" layoutY="10.0" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label fx:id="p6" prefWidth="150.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="r6" prefWidth="200.0" textFill="#f20b0b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="518.0" prefHeight="47.0" prefWidth="1000.0">
+         <children>
+            <TextField prefHeight="31.0" prefWidth="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="tc7" prefHeight="31.0" prefWidth="150.0" />
+            <Separator layoutX="874.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="a7" prefHeight="31.0" prefWidth="100.0" />
+            <Separator layoutX="345.0" layoutY="10.0" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0" />
+            <Label fx:id="p7" prefWidth="150.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="r7" prefWidth="200.0" textFill="#f20b0b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <JFXButton fx:id="calcbtn" onAction="#onButtonClick" prefHeight="31.0" prefWidth="224.0" text="CALCULATE PERCENTAGE" />
+            <JFXButton fx:id="reset" onAction="#refresh" prefHeight="31.0" prefWidth="160.0" text="RESET" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

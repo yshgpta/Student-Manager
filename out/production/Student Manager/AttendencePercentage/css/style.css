@@ -1,0 +1,25 @@
+#reset{
+    -fx-border-color: #003775;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-radius: 5px;
+    -fx-text-fill: #003775;
+}
+
+#reset:hover{
+    -fx-border-color: #003775;
+    -fx-border-width: 3px 3px 3px 3px;
+    -fx-font-size: 13px;
+}
+
+#calcbtn{
+    -fx-border-color: #13BD00;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-radius: 5px;
+    -fx-text-fill: #13BD00;
+}
+
+#calcbtn:hover{
+    -fx-border-color: #13BD00;
+    -fx-border-width: 3px 3px 3px 3px;
+    -fx-font-size: 13px;
+}

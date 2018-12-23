@@ -1,0 +1,23 @@
+#addClassButton{
+    -fx-border-color: #003775;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-radius: 5px;
+    -fx-text-fill: #003775;
+}
+
+#addClassButton:hover{
+    -fx-border-color: #003775;
+    -fx-border-width: 3px 3px 3px 3px;
+}
+
+#resetButton{
+    -fx-border-color: #121212;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-radius: 5px;
+    -fx-text-fill: #000;
+}
+
+#resetButton:hover{
+    -fx-border-color: #121212;
+    -fx-border-width: 3px 3px 3px 3px;
+}
