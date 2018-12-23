@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="sidebar" fx:id="sidebar" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="300.0" styleClass="sidebar" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyDashboard.SidebarController">
+   <children>
+      <ImageView fitHeight="165.0" fitWidth="127.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/maker.png" />
+         </image>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </ImageView>
+      <JFXButton ripplerFill="#ebebeb" styleClass="sidebar-user-btn" text="Yash Gupta" textFill="#c6c6c6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <HBox prefHeight="41.0" prefWidth="300.0">
+         <children>
+            <Label text="MAIN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="300.0" styleClass="sidebar-btn">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="6.0" />
+            <ImageView fitHeight="35.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <image>
+                  <Image url="@../img/home.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="21.0" prefWidth="126.0" text="HOME">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="224.0" prefHeight="41.0" prefWidth="300.0" styleClass="sidebar-btn">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="6.0" />
+            <ImageView fitHeight="35.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <image>
+                  <Image url="@../img/resume.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="21.0" prefWidth="126.0" text="RESUMES">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="265.0" prefHeight="41.0" prefWidth="300.0" styleClass="sidebar-btn">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="6.0" />
+            <ImageView fitHeight="35.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <image>
+                  <Image url="@../img/timetable.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="21.0" prefWidth="126.0" text="TIMETABLE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="306.0" prefHeight="41.0" prefWidth="300.0" styleClass="sidebar-btn">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="6.0" />
+            <ImageView fitHeight="35.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <image>
+                  <Image url="@../img/todo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="21.0" prefWidth="126.0" text="TO-DO">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="347.0" prefHeight="41.0" prefWidth="300.0" styleClass="sidebar-btn">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="6.0" />
+            <ImageView fitHeight="35.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <image>
+                  <Image url="@../img/calender.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="21.0" prefWidth="126.0" text="CALENDER">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="224.0" prefHeight="41.0" prefWidth="300.0">
+         <children>
+            <Label text="ADMIN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="271.0" prefHeight="41.0" prefWidth="300.0" styleClass="sidebar-btn">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="6.0" />
+            <ImageView fitHeight="35.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <image>
+                  <Image url="@../img/projects.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="21.0" prefWidth="126.0" text="PROJECTS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="353.0" prefHeight="41.0" prefWidth="300.0" styleClass="sidebar-btn">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="6.0" />
+            <ImageView fitHeight="35.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <image>
+                  <Image url="@../img/social.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="21.0" prefWidth="126.0" text="SOCIAL">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
